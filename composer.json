@@ -1,23 +1,9 @@
 {
-  "require" : {
-    "php": "^5.6.0",
-    "ext-mbstring": "*",
-    "ext-bcmath": "*",
-    "ext-memcached": "*",
-    "ext-mongo": "*",
-    "ext-xsl": "*",
-    "ext-bcmath": "*",
-    "ext-calendar": "*",
-    "ext-exif": "*",
-    "ext-ftp": "*",
+  "require": {
+    "php": "7.1.12",
     "ext-gd": "*",
-    "ext-mysql": "*",
+    "ext-mbstring": "*",
     "ext-sqlite3": "*",
-    "ext-pdo_sqlite": "*",
-    "ext-xmlrpc": "*",
-    "ext-xsl": "*"
-  },
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
+    "ext-imagick": "*"
   }
 }
