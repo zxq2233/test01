@@ -1,0 +1,30 @@
+.container {
+	background: url("../images/bg.jpg"); padding: 0px; left: 50%; top: 50%; width: 860px; height: 500px; color: rgb(65, 64, 64); line-height: 24px; font-family: "微软雅黑"; font-size: 14px; margin-top: -250px; margin-left: -430px; position: absolute;
+}
+.main {
+	margin: 60px auto 0px; border: 1px solid rgb(235, 162, 94); width: 680px; height: 320px; padding-left: 40px;
+}
+.red {
+	color: rgb(221, 128, 2);
+}
+.main h2 {
+	text-align: center; padding-top: 12px; font-size: 22px;
+}
+.main p a {
+	color: rgb(51, 51, 102);
+}
+.main .case {
+	text-align: center;
+}
+.footer {
+	width: 780px; _margin-top: 20px;
+}
+.footer .logo_box {
+	background: no-repeat 698px 0px; width: 780px; height: 27px;
+}
+.footer h2 {
+	text-align: right; color: rgb(221, 128, 2); font-size: 20px;
+}
+.footer .logo_box img {
+	border: currentColor; margin-left: 30px; float: right;
+}
