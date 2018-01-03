@@ -29,19 +29,23 @@
   
   <tbody>
       <?php
-           $host        = "host=baasu.db.elephantsql.com";
-           $port        = "port=5432";
-           $dbname      = "dbname=mdasajfc";
-           $credentials = "user=mdasajfc password=gO-yQSSal0LF7uXjxcKsG_vcCq-PcCYv";
-        
-           $db = pg_connect( "$host $port $dbname $credentials"  );
+   $host        = "host=ec2-54-163-233-103.compute-1.amazonaws.com";
+   $port        = "port=5432";
+   $dbname      = "dbname=d763r37bbuuvsd";
+   $credentials = "user=hmhrvepodcqxjl password=f2dcc9bd1e8976749bc7e84b281e9e1b831ddd20b060e24b21e155e4b5464480";
+
+   $db = pg_connect( "$host $port $dbname $credentials"  );
+ 
+   
            $sql0 =<<<EOF
-            SELECT * from DATA;
+            SELECT * from data;
 EOF;
+$ret = pg_query($db, $sql);
+  
             $ret0 = pg_query($db, $sql0);
             $d=pg_num_rows($ret0);
             $num=ceil($d/5);
-            if($num<$_GET['p']||$_GET['p']==0){
+            if($num<$_GET['p']){
                 exit();
             }
             if(is_array($_GET)&&count($_GET)>0){ 
@@ -59,7 +63,7 @@ EOF;
               
 
              $sql =<<<EOF
-      SELECT * from DATA limit  5  offset  $offset;
+      SELECT * from data limit  5  offset  $offset;
      
 EOF;
             $ret = pg_query($db, $sql);
@@ -68,7 +72,7 @@ EOF;
                 foreach ($res as $val) {
                     echo "<tr>";
                     echo '<td>'.$val['name'].'</td>';
-                    echo '<td><a href="'.$val['url'].'" target="_blank">'.$val['url'].'</td>';
+                    echo '<td><a href="./url.php?u='.$val['url'].'" target="_blank">'.$val['url'].'</td>';
                     echo "</tr>";
                 }?>
 </tbody>
