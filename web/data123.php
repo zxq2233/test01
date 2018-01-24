@@ -29,10 +29,10 @@
   
   <tbody>
       <?php
-   $host        = "host=ec2-54-163-233-103.compute-1.amazonaws.com";
+   $host        = "host=ec2-107-20-224-137.compute-1.amazonaws.com";
    $port        = "port=5432";
-   $dbname      = "dbname=d763r37bbuuvsd";
-   $credentials = "user=hmhrvepodcqxjl password=f2dcc9bd1e8976749bc7e84b281e9e1b831ddd20b060e24b21e155e4b5464480";
+   $dbname      = "dbname=d7162p450un8ss";
+   $credentials = "user=smqezctwnhxgqh password=afb9a2967fcca4e80bb4d325879174f87c6772827833719baf9a43536309ea8b";
 
    $db = pg_connect( "$host $port $dbname $credentials"  );
  
